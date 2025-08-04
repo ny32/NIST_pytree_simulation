@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Sequence name="rootSequence">
+    <Sequence name="sequenceA">
+        <PartTraySufficient name="PartTrayQtyCheck" />
+        <Inverter name="KitTrayNotFull">
+            <KitTrayFull name="KitTrayFull" />
+        </Inverter>
+    </Sequence>
+    <Sequence name="sequenceB">
+        <Action name="MoveToPartTray" />
+        <Pickup name="PickUpPart" />
+        <Action name="MoveToKitTray" />
+        <PutDown name="PutPartDown" />
+    </Sequence>
+</Sequence>
