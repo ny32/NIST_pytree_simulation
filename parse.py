@@ -28,4 +28,4 @@ def save_tree_to_xml(root_behavior, filename="behavior_tree.xml"):
 
 if __name__ == "__main__":
     root = make_bt()  # 👈 get your actual root node
-    save_tree_to_xml(root, "my_behavior_tree.xml")
+    save_tree_to_xml(root, "./exports/my_behavior_tree.xml")
